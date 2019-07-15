@@ -1,6 +1,5 @@
 declare module 'd3-weighted-voronoi' {
-  function weightedVoronoi<T = any>(): WVLayout<T>;
-  export default weightedVoronoi;
+  export function weightedVoronoi<T = any>(): WVLayout<T>;
   type pt = [number, number];
   export interface WVLayout<T> {
     (sites: T[]): Array<WVPolygon<T>>;
