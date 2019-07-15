@@ -1,0 +1,8 @@
+{
+  "name": "@types/d3-weighted-voronoi",
+  "version": "1.0.0",
+  "description": "types for d3-weighted voronoi",
+  "types": "index.d.ts",
+  "author": "ruby quail",
+  "license": "ISC"
+}
