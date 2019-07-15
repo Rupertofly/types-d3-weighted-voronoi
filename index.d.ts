@@ -11,10 +11,10 @@ declare module 'd3-weighted-voronoi' {
     weight(): (d: T) => number;
     clip(pts: pt[]): this;
     clip(): pt[];
-    extent(ext: [[pt, pt], [pt, pt]]): this;
-    extent(): [[pt, pt], [pt, pt]];
-    size(sz: [pt, pt]): this;
-    size(): [pt, pt];
+    extent(ext: [pt, pt]): this;
+    extent(): [pt, pt];
+    size(sz: pt): this;
+    size(): pt;
   }
   export interface WVVertex<T> {
     x: number;
