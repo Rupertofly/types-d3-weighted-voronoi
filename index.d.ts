@@ -17,7 +17,6 @@ declare module 'd3-weighted-voronoi' {
     size(): pt;
   }
   export interface WVVertex<T> {
-    ...T;
     x: number;
     y: number;
     weight: number;
