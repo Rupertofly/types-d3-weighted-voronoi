@@ -17,6 +17,7 @@ declare module 'd3-weighted-voronoi' {
     size(): pt;
   }
   export interface WVVertex<T> {
+    ...T;
     x: number;
     y: number;
     weight: number;
@@ -25,8 +26,7 @@ declare module 'd3-weighted-voronoi' {
     polygon: WVPolygon<T>;
     nonClippedPolygon: WVPolygon<T>;
   }
-  export interface WVPolygon<T> {
-    [i: number]: pt;
+  export interface WVPolygon<T> extends Array<pt> {
     site: WVVertex<T>;
   }
 }
